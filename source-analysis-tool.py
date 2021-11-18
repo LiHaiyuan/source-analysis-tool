@@ -1,8 +1,6 @@
 '''
 Copyright 2021 Haiyuan Li All Rights Reserved
 '''
-g_app_version = 'pre-0.1'
-
 
 class WorkSpace:
 
@@ -14,9 +12,12 @@ class WorkSpace:
 
 
 # Add an directory to the workspace
+g_app_version = 'pre-0.1'
+g_app_dispname = 'SourCE Analysis Tool'
+g_banner = ' '.join([g_app_dispname, g_app_version]) 
 
 def main():
-    print ('Source Analysis Tool')
+    print (g_banner)
 
 if __name__ == '__main__':
     main()
